@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+	margin: 0;
+	font-family: 'open sans',sans-serif;
+	font-size: 18px;
+	color:#444;
+	text-align: center;
+	overflow: auto;
+}
+img{
+	max-width: 100%
+}
+#callout {
+	width: 100%;
+	background-color: #444;
+	height: auto;
+	overflow: hidden;
+}
+#callout p{
+	text-align: right;
+	font-size: 14px;
+	color: #fff;
+	padding-right: 4%;
+}
+#callout p a{
+	text-decoration: none;
+	color: #fff;
+}
+header{
+
+}
+nav ul{
+	list-style: none; 
+	margin: 0;
+	padding-left: 50px;
+}
+nav ul li{
+	float: left;
+	width: 15%;
+	border: 1px solid #444;
+	
+}
+nav ul li a{
+	font-weight: 700;
+	text-decoration: none;
+	color: #400;
+	display: block;
+	padding: 5% 12%;
+}
+nav ul li a:hover,nav ul li.active a{
+	background-color: #444;
+	color: #aad400;
+	transition-duration: 700ms;
+}
+.banner{
+	padding-bottom: 2%;
+}
+#heading h1{
+
+	text-shadow: 2px 2px #444;
+}
+.left-col{
+	width: 55%;
+	float: left;
+	padding: 1%;
+}
+.sidebar{
+	width: 40%;
+	float: right;
+	padding: 1%;
+	transition-duration: 1s;
+}
+.sidebar:hover{
+	transform: scale(1.10);
+}
+.one-third{
+	width: 29%;
+	float: left;
+	padding: 2%;
+	transition-duration: 1s;
+}
+.one-third:hover{
+	transform: scale(1.10);
+}
+.clearfix{
+	clear: both;
+}
+.wrapper{
+	margin-left: 300px;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background:#d9d9d9;
+
+  border-radius: 60px;
+  cursor: pointer;
+  box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  margin: 0 70px;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+
+
+
+.wrapper .button:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #ff0000;
+}
+@media (max-width: 768px) {
+	nav ul{
+		padding-left: 0;
+	}
+	nav ul li{
+		width: 100%;
+		border-left: 0;
+		border-right: 0;
+	}
+	nav ul li a{
+		padding: 8px 0;
+		font-size: 16px;
+	}
+	.left-col{
+		width: 80%;
+		padding: 0 40px;
+		text-align: justify;
+	}
+	.sidebar{
+		width: 100%;
+		padding: 0;
+	}
+	.one-third{
+		width: 100%;
+		padding: 0;
+	}
+	.one-third p{
+		padding:0 50px;
+		text-align: justify;
+	}
+	.wrapper{
+		margin-left: 20px;
+	}
+	.wrapper .button{
+		width: 10%;
+		
+	}
+	.wrapper .button:hover{
+  width: 120px;
+}
+	
+}
